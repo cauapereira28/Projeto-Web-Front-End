@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Explore modelos de carros, compare valores de referência e escolha seu próximo veículo.">
+  <title>Encontre seu próximo carro | Concessionária</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho" id="inicio">
+    <a class="marca" href="#inicio">CONCESSIONÁRIA</a>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#veiculos">Veículos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="carrinho.html">Carrinho <span id="quantidade-carrinho">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <p class="subtitulo">SEU PRÓXIMO CAPÍTULO COMEÇA AQUI</p>
+      <h1>Encontre o carro<br>que move você.</h1>
+      <p>Explore modelos marcantes, compare valores de referência e descubra qual combina com o seu estilo.</p>
+      <a class="botao" href="#veiculos">Explorar veículos</a>
+    </section>
+
+    <section class="secao" id="veiculos">
+      <p class="subtitulo escuro">NOSSA SELEÇÃO</p>
+      <h2>Modelos feitos para chamar atenção</h2>
+      <p class="aviso-catalogo">Encontre seu favorito e confira o valor de referência. Os modelos e anos foram estimados pelas imagens; os valores FIPE são médias e podem variar conforme versão, quilometragem e conservação.</p>
+      <div class="filtros">
+        <label for="busca">Buscar veículo</label>
+        <input id="busca" type="search" placeholder="Digite uma marca ou modelo">
+        <label for="categoria">Escolha a categoria</label>
+        <select id="categoria">
+          <option value="todos">Todas</option>
+          <option value="esportivo">Esportivo</option>
+          <option value="sedan">Sedã</option>
+          <option value="suv">SUV</option>
+          <option value="moto">Motocicleta</option>
+        </select>
+        <span id="quantidade" class="quantidade"></span>
+      </div>
+      <p id="mensagem-carrinho" class="mensagem-carrinho" aria-live="polite"></p>
+      <div class="grade-veiculos" id="lista-veiculos"></div>
+    </section>
+
+    <section class="sobre secao" id="sobre">
+      <p class="subtitulo">PAIXÃO POR DIRIGIR</p>
+      <h2>Mais do que chegar. É aproveitar o caminho.</h2>
+      <p>Cada carro tem um jeito próprio de conquistar. Explore a seleção, conheça os modelos e escolha aquele que combina com seus planos.</p>
+    </section>
+
+    <section class="chamada-compra">
+      <div>
+        <p class="subtitulo">PRONTO PARA ESCOLHER?</p>
+        <h2>Seu próximo favorito pode estar na seleção.</h2>
+      </div>
+      <a class="botao" href="#veiculos">Ver modelos</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>Seu próximo caminho começa com uma escolha.</span>
+    <a href="#inicio">Voltar ao início ↑</a>
+  </footer>
+</body>
+</html>

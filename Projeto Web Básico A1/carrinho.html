@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Confira seus veículos escolhidos e conclua uma simulação de compra.">
+  <title>Sua seleção | Concessionária</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <a class="marca" href="index.html">CONCESSIONÁRIA</a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="index.html#veiculos">Veículos</a>
+      <a href="carrinho.html">Carrinho <span id="quantidade-carrinho">0</span></a>
+    </nav>
+  </header>
+
+  <main class="pagina-carrinho">
+    <p class="subtitulo escuro">SUA ESCOLHA, SEU PRÓXIMO DESTINO</p>
+    <h1>Revise sua seleção</h1>
+    <p class="aviso-carrinho">Confira os veículos e os valores de referência antes de continuar. Os modelos e anos foram estimados pelas imagens; valores FIPE são médias e podem variar conforme versão, quilometragem e conservação. A finalização é demonstrativa: nenhuma cobrança será feita.</p>
+
+    <section class="resumo-carrinho" aria-labelledby="titulo-carrinho">
+      <h2 id="titulo-carrinho">1. Seus veículos</h2>
+      <ul id="itens-carrinho"></ul>
+      <p class="total">Total <strong id="total-carrinho">R$ 0,00</strong></p>
+      <button class="botao botao-claro" id="limpar-carrinho" type="button">Limpar carrinho</button>
+    </section>
+
+    <form id="form-compra" class="form-compra">
+      <section>
+        <h2>2. Seus dados</h2>
+        <label for="nome">Como podemos chamar você?</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required minlength="3">
+        <label for="email">E-mail para identificação</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+      </section>
+
+      <fieldset class="metodos-pagamento">
+        <legend>3. Como prefere pagar?</legend>
+        <label class="opcao-pagamento">
+          <input type="radio" name="pagamento" value="PIX" required>
+          <img class="icone-pagamento" src="img/pagamentos/pix.png" alt="">
+          <span>PIX</span>
+        </label>
+        <label class="opcao-pagamento">
+          <input type="radio" name="pagamento" value="Cartão de crédito">
+          <img class="icone-pagamento" src="img/pagamentos/cartao.svg" alt="">
+          <span>Cartão de crédito</span>
+          <span class="bandeiras-cartao" aria-label="Bandeiras aceitas">
+            <img src="img/pagamentos/visa.svg" alt="Visa">
+            <img src="img/pagamentos/mastercard.svg" alt="Mastercard">
+            <img src="img/pagamentos/elo.svg" alt="Elo">
+          </span>
+        </label>
+        <label class="opcao-pagamento">
+          <input type="radio" name="pagamento" value="Cartão de débito">
+          <img class="icone-pagamento" src="img/pagamentos/cartao.svg" alt="">
+          <span>Cartão de débito</span>
+          <span class="bandeiras-cartao" aria-label="Bandeiras aceitas">
+            <img src="img/pagamentos/visa.svg" alt="Visa">
+            <img src="img/pagamentos/mastercard.svg" alt="Mastercard">
+            <img src="img/pagamentos/elo.svg" alt="Elo">
+          </span>
+        </label>
+        <label class="opcao-pagamento">
+          <input type="radio" name="pagamento" value="Boleto">
+          <img class="icone-pagamento" src="img/pagamentos/boleto.svg" alt="">
+          <span>Boleto</span>
+        </label>
+      </fieldset>
+
+      <section class="confirmacao-pagamento">
+        <h2>4. Finalize sua simulação</h2>
+        <p>Escolha a forma de pagamento e conclua seu pedido demonstrativo. Não pedimos dados bancários e nenhuma cobrança será feita.</p>
+        <button class="botao" type="submit">Concluir compra demonstrativa</button>
+        <p id="resposta-compra" class="resposta-compra" aria-live="polite"></p>
+      </section>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <a href="index.html">Voltar aos veículos</a>
+    <span>Uma experiência de compra demonstrativa.</span>
+  </footer>
+</body>
+</html>
