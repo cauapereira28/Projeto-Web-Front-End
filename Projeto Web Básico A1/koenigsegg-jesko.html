@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detalhes do veículo Koenigsegg Jesko no catálogo da concessionária.">
+  <title>Koenigsegg Jesko | Concessionária</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <a class="marca" href="index.html">CONCESSIONÁRIA</a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="index.html#veiculos">Veículos</a>
+      <a href="carrinho.html">Carrinho <span id="quantidade-carrinho">0</span></a>
+    </nav>
+  </header>
+  <main class="pagina-detalhe">
+    <p class="subtitulo escuro">DETALHES DO VEÍCULO</p>
+    <h1>Koenigsegg Jesko</h1>
+    <div class="detalhe-veiculo">
+      <img src="img/images.jpg" alt="Koenigsegg Jesko" fetchpriority="high">
+      <section class="informacoes-veiculo">
+        <p class="categoria-veiculo">Categoria: Esportivo</p>
+        <h2>Valor de referência</h2>
+        <p class="preco-detalhe">R$ 11.900.000,00</p>
+        <p class="referencia-preco">Referência de lançamento · 2019</p>
+        <h2>Informações disponíveis</h2>
+        <p>Esta página apresenta o modelo identificado no catálogo e sua referência de valor.</p>
+        <p class="aviso-catalogo">Os PDFs enviados não trazem ficha técnica, quilometragem ou itens de cada veículo. Por isso, esses dados não foram acrescentados.</p>
+        <button class="botao" id="adicionar-detalhe" data-indice="2" type="button">Adicionar ao carrinho</button>
+        <p id="mensagem-detalhe" class="mensagem-carrinho" aria-live="polite"></p>
+      </section>
+    </div>
+    <a class="link-voltar" href="index.html#veiculos">← Voltar para os veículos</a>
+  </main>
+  <footer class="rodape">
+    <span>Seu próximo caminho começa com uma escolha.</span>
+    <a href="index.html">Voltar ao início</a>
+  </footer>
+</body>
+</html>
